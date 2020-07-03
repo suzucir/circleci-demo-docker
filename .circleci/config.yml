@@ -42,6 +42,7 @@ jobs:
             make test | tee ${TEST_RESULTS}/go-test.out
 
       - setup_remote_docker
+      # ここでDLCを使う
 
       # This should go into custom primary image, here's only for the sake of explanation
       - run:
